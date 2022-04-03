@@ -55,6 +55,8 @@ export default {
             this.xy = [];
         },
         record(event) {
+            console.log(event)
+            console.log(this.text)
             if(this.xy.length < this.text.length){
                 this.xy.push(event.offsetX + "," + event.offsetY);
                 if (this.xy.length == this.text.length) {
