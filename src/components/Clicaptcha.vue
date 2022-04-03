@@ -76,7 +76,7 @@ export default {
                                 this.tip = this.success;
                                 setTimeout(() => {
                                     this.close();
-                                    this.callback();
+                                    this.callback(cb);
                                 }, 1500);
                             } else {
                                 this.tip = this.error;
