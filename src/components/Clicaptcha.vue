@@ -39,7 +39,7 @@ export default {
             isCheck: false,
             xy: [],
             text: [],
-            callback: function() {}
+            callback: function(res) {}
         };
     },
     created() {
@@ -72,6 +72,7 @@ export default {
                             })
                         )
                         .then(cb => {
+                            console.log(cb)
                             if (cb.data == 1) {
                                 this.tip = this.success;
                                 setTimeout(() => {
